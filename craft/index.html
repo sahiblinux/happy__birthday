@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy birthday, Noorie.</title>
+<meta name="description" content="A small birthday thing for Prabhnoor.">
+<meta name="theme-color" content="#F5EFE2">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.className += ' js gated';</script>
+</head>
+<body>
+
+<!--
+  The opening curtain. Until midnight on 3 December it is a countdown and
+  nothing else — no button to press. The moment the clock runs out (or she
+  opens the page late) her video plays by itself, full screen.
+  Drop the film in as assets/her.mp4 (H.264, plays on every phone).
+  No film there? The page just opens.
+-->
+<div class="gate" data-gate>
+  <div class="gate__inner" data-gate-wait>
+    <span class="gate__seal" aria-hidden="true">N</span>
+    <p class="label gate__label">Prabhnoor &nbsp;·&nbsp; 3 December</p>
+    <p class="gate__lede">This one opens by itself at midnight.</p>
+    <div class="countdown">
+      <span class="countdown__cell"><b class="countdown__num" data-cd="d">00</b><span class="label countdown__unit">days</span></span>
+      <span class="countdown__cell"><b class="countdown__num" data-cd="h">00</b><span class="label countdown__unit">hrs</span></span>
+      <span class="countdown__cell"><b class="countdown__num" data-cd="m">00</b><span class="label countdown__unit">min</span></span>
+      <span class="countdown__cell"><b class="countdown__num" data-cd="s">00</b><span class="label countdown__unit">sec</span></span>
+    </div>
+  </div>
+
+  <div class="gate__film" data-gate-film hidden>
+    <video class="film__video" data-film data-src="assets/her.mp4" playsinline preload="none"></video>
+    <button class="film__sound" type="button" data-film-sound hidden>Tap for sound</button>
+  </div>
+
+  <span class="gate__corner gate__corner--a" aria-hidden="true">✳</span>
+  <span class="gate__corner gate__corner--b" aria-hidden="true">✳</span>
+</div>
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="masthead">
+  <span class="label">Birthday Edition</span>
+  <span class="label">3 December 2026</span>
+</header>
+
+<main>
+
+  <section class="hero">
+    <div class="hero__eyebrow">
+      <span class="label">For the record</span>
+      <span class="hero__rule" aria-hidden="true"></span>
+      <span class="hero__mark" aria-hidden="true">✳</span>
+    </div>
+
+    <h1 class="hero__title">
+      <span class="hero__line">Happy</span>
+      <span class="hero__line hero__line--italic">birthday,</span>
+      <span class="hero__line">Noorie.</span>
+    </h1>
+
+    <div class="hero__aside">
+      <p>You don't need a website. But it's your birthday, the internet is free, and I had a Sunday. Take it as a card that didn't fit in an envelope.</p>
+      <p class="label label--muted">Prabhnoor &nbsp;·&nbsp; 3 December 2026</p>
+    </div>
+
+    <div class="hero__foot" aria-hidden="true">
+      <span class="hero__foot-line"></span>
+      <span class="label">Scroll</span>
+    </div>
+  </section>
+
+  <div class="ticker bleed" aria-hidden="true">
+    <div class="ticker__track">
+      <span class="ticker__group">
+        <em>Happy birthday, Noorie</em><b>✳</b>
+        <em class="ticker__alt">a whole year older, somehow no wiser</em><b>✳</b>
+        <em>Happy birthday, Noorie</em><b>✳</b>
+        <em class="ticker__alt">eat the cake, all of it</em><b>✳</b>
+      </span>
+      <span class="ticker__group">
+        <em>Happy birthday, Noorie</em><b>✳</b>
+        <em class="ticker__alt">a whole year older, somehow no wiser</em><b>✳</b>
+        <em>Happy birthday, Noorie</em><b>✳</b>
+        <em class="ticker__alt">eat the cake, all of it</em><b>✳</b>
+      </span>
+    </div>
+  </div>
+
+  <section class="section" aria-labelledby="s-one">
+    <div class="section__head">
+      <span class="label section__num">01</span>
+      <h2 class="section__title" id="s-one">Things I'd say out loud</h2>
+    </div>
+
+    <ol class="list">
+      <li class="list__item reveal">
+        <span class="list__num">01</span>
+        <p>You make a room easier to be in. That's rarer than people give it credit for.</p>
+      </li>
+      <li class="list__item reveal">
+        <span class="list__num">02</span>
+        <p>You laugh at the worst possible moment, on purpose, and somehow it fixes the room.</p>
+      </li>
+      <li class="list__item reveal">
+        <span class="list__num">03</span>
+        <p>You remember the small things about people — the ones they didn't think anyone noticed.</p>
+      </li>
+      <li class="list__item reveal">
+        <span class="list__num">04</span>
+        <p>You're the one who checks in on an ordinary Tuesday, for no reason at all.</p>
+      </li>
+      <li class="list__item reveal">
+        <span class="list__num">05</span>
+        <p>You've got a quiet stubbornness I've watched carry you through more than you let on.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!--
+    Voice notes: drop her three recordings in as assets/voice/01.mp3 … 03.mp3.
+    Any of .mp3, .m4a or .wav works — just keep data-vn in step with the file name.
+    A slot with no file shows its number in the play button instead of breaking.
+    Durations are read from the files themselves; the captions are the
+    .vn__cap text below. Copy a whole <li> to add a fourth slot.
+  -->
+
+  <section class="section section--notes" aria-labelledby="s-notes">
+    <div class="section__head">
+      <span class="label section__num">02</span>
+      <h2 class="section__title" id="s-notes">Said out loud</h2>
+    </div>
+
+    <p class="notes__intro">Her voice, not mine. The recordings she'd probably like back — press play and pretend you didn't.</p>
+
+    <ul class="vn-grid">
+      <li class="vn vn--a reveal" data-vn-item>
+        <button class="vn__btn" type="button" data-vn="assets/voice/01.mp3" aria-label="Play voice note 01">
+          <span class="vn__glyph" aria-hidden="true"></span>
+          <span class="vn__empty" aria-hidden="true">01</span>
+        </button>
+        <div class="vn__body">
+          <span class="label vn__num">01</span>
+          <p class="vn__cap">random voice notes</p>
+          <div class="vn__track" aria-hidden="true"><span class="vn__fill"></span></div>
+        </div>
+        <span class="label vn__time" data-vn-time>—</span>
+      </li>
+
+      <li class="vn vn--b reveal" data-vn-item>
+        <button class="vn__btn" type="button" data-vn="assets/voice/02.mp3" aria-label="Play voice note 02">
+          <span class="vn__glyph" aria-hidden="true"></span>
+          <span class="vn__empty" aria-hidden="true">02</span>
+        </button>
+        <div class="vn__body">
+          <span class="label vn__num">02</span>
+          <p class="vn__cap">random voice notes</p>
+          <div class="vn__track" aria-hidden="true"><span class="vn__fill"></span></div>
+        </div>
+        <span class="label vn__time" data-vn-time>—</span>
+      </li>
+
+      <li class="vn vn--c reveal" data-vn-item>
+        <button class="vn__btn" type="button" data-vn="assets/voice/03.mp3" aria-label="Play voice note 03">
+          <span class="vn__glyph" aria-hidden="true"></span>
+          <span class="vn__empty" aria-hidden="true">03</span>
+        </button>
+        <div class="vn__body">
+          <span class="label vn__num">03</span>
+          <p class="vn__cap">random voice notes</p>
+          <div class="vn__track" aria-hidden="true"><span class="vn__fill"></span></div>
+        </div>
+        <span class="label vn__time" data-vn-time>—</span>
+      </li>
+    </ul>
+  </section>
+
+  <section class="section section--gallery" aria-labelledby="s-two">
+    <div class="section__head">
+      <span class="label section__num">03</span>
+      <h2 class="section__title" id="s-two">Exhibit A</h2>
+    </div>
+
+    <!--
+      To swap in real photos: save them as assets/photos/01.jpg … 06.jpg
+      (any of them can be .png or .webp if you change the src to match).
+      A slot with no matching file shows its number on a colour block.
+      Captions are the <figcaption> text below — edit freely.
+    -->
+
+    <div class="gallery">
+      <figure class="polaroid polaroid--a reveal">
+        <div class="polaroid__frame">
+          <img src="assets/photos/01.jpg" alt="A photo of Noorie" loading="lazy"
+               onerror="this.closest('figure').classList.add('is-empty')">
+          <span class="polaroid__empty" aria-hidden="true">01</span>
+        </div>
+        <figcaption>The one from that summer</figcaption>
+      </figure>
+
+      <figure class="polaroid polaroid--b reveal">
+        <div class="polaroid__frame">
+          <img src="assets/photos/02.jpg" alt="A photo of Noorie" loading="lazy"
+               onerror="this.closest('figure').classList.add('is-empty')">
+          <span class="polaroid__empty" aria-hidden="true">02</span>
+        </div>
+        <figcaption>Mid-laugh, as usual</figcaption>
+      </figure>
+
+      <figure class="polaroid polaroid--c reveal">
+        <div class="polaroid__frame">
+          <img src="assets/photos/03.jpg" alt="A photo of Noorie" loading="lazy"
+               onerror="this.closest('figure').classList.add('is-empty')">
+          <span class="polaroid__empty" aria-hidden="true">03</span>
+        </div>
+        <figcaption>Somebody's birthday, not this one</figcaption>
+      </figure>
+
+      <figure class="polaroid polaroid--d reveal">
+        <div class="polaroid__frame">
+          <img src="assets/photos/04.jpg" alt="A photo of Noorie" loading="lazy"
+               onerror="this.closest('figure').classList.add('is-empty')">
+          <span class="polaroid__empty" aria-hidden="true">04</span>
+        </div>
+        <figcaption>Proof you were there</figcaption>
+      </figure>
+
+      <figure class="polaroid polaroid--e reveal">
+        <div class="polaroid__frame">
+          <img src="assets/photos/05.jpg" alt="A photo of Noorie" loading="lazy"
+               onerror="this.closest('figure').classList.add('is-empty')">
+          <span class="polaroid__empty" aria-hidden="true">05</span>
+        </div>
+        <figcaption>The good hair day</figcaption>
+      </figure>
+
+      <figure class="polaroid polaroid--f reveal">
+        <div class="polaroid__frame">
+          <img src="assets/photos/06.jpg" alt="A photo of Noorie" loading="lazy"
+               onerror="this.closest('figure').classList.add('is-empty')">
+          <span class="polaroid__empty" aria-hidden="true">06</span>
+        </div>
+        <figcaption>Keep this one</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section section--card bleed" aria-labelledby="s-three">
+    <div class="section__head">
+      <span class="label section__num">04</span>
+      <h2 class="section__title" id="s-three">The card</h2>
+    </div>
+
+    <div class="card-wrap">
+      <div class="card" data-card>
+        <article class="card__note" id="card-note" tabindex="-1">
+          <p class="card__salutation">Dear Noorie,</p>
+
+          <p>Birthdays are a decent excuse to say the things I mean all year and never get round to saying.</p>
+
+          <p>So — I hope this one's gentler than the last. I hope you do the thing you keep talking about doing. I hope your coffee is always the right temperature and your trains are always on time, and I hope the year hands you a few genuinely good surprises.</p>
+
+          <p>And I hope you know that nobody is waiting for you to earn the good stuff. You already did.</p>
+
+          <p class="card__sign">Happy birthday.</p>
+          <p class="card__from">— with love</p>
+
+          <p class="card__ps">P.S. There's cake in the fridge. I checked.</p>
+        </article>
+
+        <button class="card__cover" type="button" data-card-cover aria-expanded="false" aria-controls="card-note">
+          <span class="card__cover-inner">
+            <span class="card__seal" aria-hidden="true">N</span>
+            <span class="card__kicker">For Prabhnoor</span>
+            <span class="card__hint">Press to open</span>
+          </span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="colophon">
+    <p class="colophon__line">Many happy returns, <em>Noorie.</em></p>
+    <div class="colophon__meta">
+      <span class="label">Made by hand, mostly</span>
+      <span class="label">3 December 2026</span>
+    </div>
+  </section>
+
+</main>
+
+<!-- soundtrack -->
+<audio data-audio src="assets/song.mp3" preload="auto"></audio>
+
+<button class="sound" type="button" data-sound aria-pressed="false" aria-label="Play the soundtrack">
+  <span class="sound__disc" aria-hidden="true"></span>
+  <span class="sound__label">Play</span>
+</button>
+
+<script src="script.js" defer></script>
+</body>
+</html>
